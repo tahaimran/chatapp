@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <h1 class="text-center chat">Chat Page</h1>
+  <ul id="messages">
+    <p class="text-center">You Are Connected To World Chat.</p>
+
+  </ul>
+
+  <form onsubmit="return sendMessage();">
+    <input style="margin-left: 30%;" id="message" placeholder="Enter Your Message" class="form-control" autocomplete="off">
+
+    <input  style="margin-left: 40%; margin-top: 10px;" type="submit" class="sub ">
+
+  </form>
+<button class="btn btn-primary" onclick="logout()">Log Out</button>
+
+
+</body>
+
+</html>
